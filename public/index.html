@@ -8,6 +8,7 @@
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css">-->
 
 <!--    <link rel="stylesheet" href="css/bulma.css" />-->
+<!--    <link rel="stylesheet" href="css/master.css" />-->
 <!--    <script type="text/javascript" src="js/tone.js"></script>-->
 
 <!--    <script type="text/javascript" src="js/nexusUI.js"></script>-->
@@ -15,14 +16,14 @@
 <!--    <script type="text/javascript" src="js/master.js"></script>-->
   </head>
   <body>
-    <main>
+    <main class="container is-fluid content">
       <h1>Generating audio</h1>
       <p>You can play with the buttons and sliders you see here to make music!</p>
       <p>This is a project for learning and improving on my styling, frontend, as well
       as working with web audio and using the MEAN stack.</p>
     </main>
       
-    <section id="app">
+    <section id="app" class="box">
       <canvas id="knob" nx="dial" min="0" max="1" label="Vol"></canvas>
       <canvas id="signal" nx="button" label="Press Me"></canvas>
     </section>
