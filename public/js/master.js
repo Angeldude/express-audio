@@ -1,13 +1,13 @@
-var boob = {};
-boob.vol = new Tone.Gain(0.8).toMaster();
-boob.crush = new Tone.BitCrusher(3).connect(boob.vol);
-boob.sound = new Tone.MonoSynth().connect(boob.crush);
+var instr = {};
+instr.vol = new Tone.Gain(0.8).toMaster();
+instr.crush = new Tone.BitCrusher(3).connect(instr.vol);
+instr.sound = new Tone.MonoSynth().connect(instr.crush);
 
 nx.onload = function(){
   love.on('*', function(){
-    boob.vol.gain.value = this.val.value;
+    instr.vol.gain.value = this.val.value;
   })
   signal.on('*', function(){
-    boob.sound.triggerAttackRelease("C5", "1n");
+    instr.sound.triggerAttackRelease("C5", "1n");
   })
 }
