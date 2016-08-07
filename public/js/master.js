@@ -1,12 +1,13 @@
 var boob = {};
-boob.volume = new Tone.Gain(0.5).toMaster();
-boob.sound = new Tone.FMSynth().connect(boob.volume);
+boob.vol = new Tone.Gain(0.8).toMaster();
+boob.crush = new Tone.BitCrusher(3).connect(boob.vol);
+boob.sound = new Tone.MonoSynth().connect(boob.crush);
 
 nx.onload = function(){
   love.on('*', function(){
-    boob.volume.gain.value = this.val;
+    boob.vol.gain.value = this.val.value;
   })
   signal.on('*', function(){
-    boob.sound.triggerAttackRelease("C5", "4n");
+    boob.sound.triggerAttackRelease("C5", "1n");
   })
 }
