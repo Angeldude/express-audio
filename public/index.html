@@ -6,8 +6,7 @@
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css">-->
 
-    <link rel="stylesheet" href="css/bulma.css" />
-<!--    <link rel="stylesheet" href="css/master.css" />-->
+<!--    <link rel="stylesheet" href="css/bulma.css" />-->
 <!--    <script type="text/javascript" src="js/tone.js"></script>-->
 
 <!--    <script type="text/javascript" src="js/nexusUI.js"></script>-->
@@ -18,13 +17,33 @@
     <main class="container content">
       <h1>Generating audio</h1>
       <p>You can play with the buttons and sliders you see here to make music!</p>
-      <p>This is a project for learning and improving on my styling, frontend, as well
-      as working with web audio and using the MEAN stack.</p>
+      <p>This is a project for learning and improving on my styling, using the Bulma framework,
+      as well as working with web audio and using the MEAN stack.</p>
     </main>
       
-    <section id="app" class="box container">
-      <canvas id="knob" nx="dial" min="0" max="1" label="Vol"></canvas>
-      <canvas id="signal" nx="button" label="Press Me"></canvas>
+    <section id="app" class="section container">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+        <div class="tile is-child">
+          <canvas id="knob" nx="dial" label="Volume"></canvas>
+        </div>
+        <div class="tile is-child">
+          <canvas id="signal" nx="button" label="Press Me"></canvas>
+        </div>
+      </div>
+      </div>
     </section>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>Made with <span class="fa fa-heart"></span> by <strong>Angel Vanegas</strong></p>
+          <p><a class="icon" href="http://www.github.com/angeldude"><i class="fa fa-github"></i></a>
+          <a class="icon" href="http://www.twitter.com/namlegna"><i class="fa fa-twitter"></i></a>
+            <a class="icon" href="https://www.linkedin.com/in/angel-vanegas-98511058"><i class="fa fa-linkedin"></i></a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
