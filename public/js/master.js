@@ -9,6 +9,7 @@ nx.onload = function(){
   slide.draw();
   banner1.colors.accent = "#6d3480";
   banner1.draw();
+  
   slide.on('*', function(){
     instr.vol.gain.value = this.val.value;
   })
