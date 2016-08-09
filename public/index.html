@@ -6,26 +6,27 @@
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css">-->
 
-<!--    <link rel="stylesheet" href="css/bulma.css" />-->
-<!--    <script type="text/javascript" src="js/tone.js"></script>-->
+    <link rel="stylesheet" href="css/bulma.css" />
+    <script type="text/javascript" src="js/tone.js"></script>
 
-<!--    <script type="text/javascript" src="js/nexusUI.js"></script>-->
+    <script type="text/javascript" src="js/nexusUI.js"></script>
 <!--    <script src="https://tonejs.github.io/CDN/latest/Tone.min.js"></script>-->
-<!--    <script type="text/javascript" src="js/master.js"></script>-->
+    <script type="text/javascript" src="js/master.js"></script>
   </head>
   <body>
     <main class="container content">
       <h1>Generating audio</h1>
-      <p>Audio data is represented as numbers on the computer. Since audio is analog,
-        how does this work? Since a computer deals with finite numbers, we take a finite number of samples along a sine wave. This is how sound on computers basically works.</p>
+      <p>Audio data is represented as numbers on the computer. Since audio is
+      continuous, computers instead take samples of an audio signal. With enough 
+      samples, the computer can accurately represent the sound digitally.</p>
     </main>
       
     <section id="app" class="section container">
-
-          <canvas id="slide" nx="slider" label="Vol"></canvas> 
-  
-          <canvas id="signal" nx="button" label="Press Me"></canvas>
-
+      
+      <canvas id="slide" nx="slider" label="Vol"></canvas>
+      <canvas id="signal" nx="button" label="Press Me"></canvas>
+      <canvas id="metronome" nx="metro"></canvas>
+      
     </section>
     
     <footer class="footer">
