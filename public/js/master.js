@@ -9,11 +9,20 @@ nx.onload = function(){
   slide.draw();
   banner1.colors.accent = "#6d3480";
   banner1.draw();
-  
+  switched.colors.border = "white";
+  switched.draw();
+
   slide.on('*', function(){
     instr.vol.gain.value = this.val.value;
   })
   signal.on('*', function(){
     instr.sound.triggerAttackRelease(nx.mtof(instr.rand()), "8n");
   })
+  switched.on('*', function(){
+    if(switched.val.value === 1){
+      console.log("i'm on!");
+    } else
+      console.log("i'm off");
+  })
+
 }
