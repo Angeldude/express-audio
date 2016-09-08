@@ -27,8 +27,10 @@ nx.onload = function(){
   nx.colorize("lightblue");
   slide.val.value = 0.5;
   slide.draw();
+
   banner1.colors.accent = "#6d1480";
   banner1.draw();
+
   switched.colors.border = "white";
   switched.draw();
 
